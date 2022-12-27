@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct LoadingView: View {
+    
+    @State var currentProgress: CGFloat = 30.0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+        VStack {
+            
+            Image("carBlue")
+                .padding()
+            
+            ProgressView(value: currentProgress, total: 100)
+                .frame(width: 200)
+                .padding()
+            
+            Text("Loading Booking Summary")
+                .font(.headline)
+                .foregroundColor(Color("GrayLight"))
+                .padding()
+        }
+        .padding()
     }
 }
 

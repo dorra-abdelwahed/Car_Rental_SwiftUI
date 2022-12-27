@@ -11,6 +11,8 @@
 		8B15926F29531B3C001388F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15926E29531B3C001388F2 /* ContentView.swift */; };
 		8B15927129531B3F001388F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B15927029531B3F001388F2 /* Assets.xcassets */; };
 		8B15927429531B3F001388F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B15927329531B3F001388F2 /* Preview Assets.xcassets */; };
+		8B3400D92954570500F949F6 /* PickerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3400D82954570500F949F6 /* PickerComponent.swift */; };
+		8B3400DB295891D300F949F6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3400DA295891D300F949F6 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8B15926E29531B3C001388F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B15927029531B3F001388F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B15927329531B3F001388F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B3400D82954570500F949F6 /* PickerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerComponent.swift; sourceTree = "<group>"; };
+		8B3400DA295891D300F949F6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,12 @@
 		8B15926B29531B3C001388F2 /* CarRental_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				8B15926C29531B3C001388F2 /* CarRental_SwiftUIApp.swift */,
-				8B15926E29531B3C001388F2 /* ContentView.swift */,
-				8B15927029531B3F001388F2 /* Assets.xcassets */,
+				8B3400D7295456E300F949F6 /* Component */,
+				8B15927E29531BCF001388F2 /* Model */,
+				8B15927D29531BC6001388F2 /* View Model */,
+				8B15927B29531BB1001388F2 /* App */,
+				8B15927A29531BA7001388F2 /* Views */,
+				8B15927C29531BBB001388F2 /* Ressources */,
 				8B15927229531B3F001388F2 /* Preview Content */,
 			);
 			path = CarRental_SwiftUI;
@@ -65,6 +72,53 @@
 				8B15927329531B3F001388F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B15927A29531BA7001388F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B15926E29531B3C001388F2 /* ContentView.swift */,
+				8B3400DA295891D300F949F6 /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B15927B29531BB1001388F2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B15926C29531B3C001388F2 /* CarRental_SwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8B15927C29531BBB001388F2 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				8B15927029531B3F001388F2 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		8B15927D29531BC6001388F2 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		8B15927E29531BCF001388F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B3400D7295456E300F949F6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8B3400D82954570500F949F6 /* PickerComponent.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B15926F29531B3C001388F2 /* ContentView.swift in Sources */,
+				8B3400DB295891D300F949F6 /* LoadingView.swift in Sources */,
+				8B3400D92954570500F949F6 /* PickerComponent.swift in Sources */,
 				8B15926D29531B3C001388F2 /* CarRental_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +361,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

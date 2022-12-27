@@ -8,13 +8,47 @@
 import SwiftUI
 
 struct PickerComponent: View {
+    
+    var title: String
+    var subTitle: String
+    var image: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            
+            VStack(alignment: .leading){
+                
+                Text(title)
+                    .font(.caption)
+                
+                Text(subTitle)
+                    .font(.caption2)
+            }
+            
+            Spacer()
+            
+            Image(systemName: image)
+                .font(.headline)
+        }
+        .padding()
+        .foregroundColor(.white)
+        .background(Color("DarkBlue"))
+        .clipShape(
+
+            // 3
+            RoundedRectangle(
+                cornerRadius: 20,
+                style: .continuous
+            )
+            )
+        
     }
 }
 
 struct PickerComponent_Previews: PreviewProvider {
     static var previews: some View {
-        PickerComponent()
+        
+        PickerComponent(title: "Pick Up Location", subTitle: "Tunisa - Sousse", image: "chevron.down")
     }
 }
